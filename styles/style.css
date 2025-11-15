@@ -14,7 +14,8 @@ main,
     max-width: 1240px;
     margin: 0 auto;
 }
-main > section{
+
+main>section {
     margin-top: 50px;
 }
 
@@ -30,7 +31,7 @@ main > section{
     color: rgba(114, 114, 114, 1);
 }
 
-.orange{
+.orange {
     color: rgba(255, 144, 14, 1);
 }
 
@@ -47,15 +48,17 @@ main > section{
     font-weight: 600;
     border-radius: 10px;
 }
-.title{
-    font-size: 2.5rem ;
-    font-weight: 700 ;
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 5px;
     margin-top: 100px;
 }
-.details{
-    font-size: 1rem ;
-    font-weight: 400 ;
+
+.details {
+    font-size: 1rem;
+    font-weight: 400;
     color: rgba(114, 114, 114, 1);
 }
 
@@ -117,24 +120,81 @@ main > section{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-.feature-container{
+
+.feature-container {
     max-width: 400px;
     margin-left: 50px;
 }
-.feature-title{
+
+.feature-title {
     font-weight: 700;
     font-size: 2.5rem;
 }
-#quick-list{
+
+#quick-list {
     font-weight: 500;
 }
 
-/* card-section */
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+/* experience section */
+.experience-section {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
 }
-.card{
+
+.exp-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#exp-main-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 18px;
+}
+
+.experience-div {
+    padding: 15px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#exp-button {
+    padding: 45px 42px;
+    margin-left: -60px;
+    margin-top: -180px;
+}
+
+.year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.exp {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.exp-image {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+.experience-section .image-part {
+    margin-top: 40px;
+}
+
+
+/* card-section */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
     border: 0.5px solid #FF900E;
     width: 240px;
     height: 240px;
@@ -144,40 +204,46 @@ main > section{
     text-align: center;
     align-items: center;
 }
-.card-number{
+
+.card-number {
     font-weight: 600;
     font-size: 2.5rem;
     margin-top: 2px;
     margin-bottom: 2px;
 }
-.card-text{
+
+.card-text {
     font-weight: 600;
     font-size: 1.1rem;
     margin-top: 2px;
 }
-.fact-details{
+
+.fact-details {
     max-width: 540px;
     width: 100%;
     margin-bottom: 50px;
 }
 
 /* sponsors section */
-.sponsors-container{
+.sponsors-container {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin-top: 60px;
     margin-bottom: 150px;
 }
-.rights-reserved{
+
+.rights-reserved {
     padding: 39px 300px;
     font-weight: 400;
     font-size: 1.25rem;
 }
-.fact-div{
+
+.fact-div {
     text-align: center;
     margin: 0 auto;
 }
-.sponsors-container img{
+
+.sponsors-container img {
     filter: grayscale(100%);
 }
 
@@ -186,36 +252,54 @@ main > section{
 @media screen and (max-width:576px) {
 
     .navbar,
-    .nav-links {
+    .nav-links,
+    .experience-section {
         flex-direction: column;
     }
+
     .team-images {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .teams-feature {
         flex-direction: column-reverse;
         gap: 10px;
     }
-    .feature-container{
+
+    .feature-container {
         text-align: center;
         margin-left: 10px;
     }
-    .card-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         /* ********* */
         justify-items: center;
     }
-    .some-facts{
+
+    .some-facts {
         text-align: center;
     }
-    .sponsors-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .sponsors-container {
+        grid-template-columns: repeat(1, 1fr);
         gap: 60px;
         justify-items: center;
     }
-    .rights-reserved{
+
+    .rights-reserved {
         padding: 0;
         text-align: center;
+    }
+
+    .experience-div {
+        padding: 0px;
+    }
+
+    #exp-button {
+        margin-top: 20px;
+        margin-left: 35px;
+        padding: 10px;
     }
 }
